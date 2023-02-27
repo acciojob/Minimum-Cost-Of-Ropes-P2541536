@@ -1,7 +1,7 @@
 function minCostToFromRope(a) {
   //your code here
 	a.preventDefault();
-	var inputElement = docuement.querySelector("input").value;
+	var inputElement = document.querySelector("input").value;
 	var arr = inputElement.split(",");
 	arr.sort( function (a,b) {
 		return a - b;
