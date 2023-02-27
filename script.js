@@ -1,13 +1,13 @@
-function calculateMinCostToFromRope(a) {
+function minCostToFromRope(a) {
   //your code here
 	a.preventDefault();
-	var inputElement = doucement.querySelector("input").value;
-	var arr = inputElement.spilt(",");
+	var inputElement = docuement.querySelector("input").value;
+	var arr = inputElement.split(",");
 	arr.sort( function (a,b) {
-		return a-b;
+		return a - b;
 	});
 	var cost = 0;
-	while(arr.lenght > 1){
+	while(arr.length > 1){
 		var res = Number(arr[0]) + Number(arr[1]);
 		arr.splice(0 , 2);
 		arr.push(res);
@@ -17,7 +17,7 @@ function calculateMinCostToFromRope(a) {
 			
 		});
 	}
-	document.getElementById("result").textCotent = cost;
+	document.getElementById("result").textContent = cost;
 }
   
   
